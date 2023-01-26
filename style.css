@@ -1,0 +1,20 @@
+.card {
+    border: 1px solid gray;
+    margin: 15px;
+   padding: 10px;
+}
+
+.removed {
+    display: none;
+}
+
+.addBook{
+    display: none;
+}
+.addBookContainer {
+    /* display: none; */
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
