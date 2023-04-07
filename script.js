@@ -47,7 +47,7 @@ function displayBook(book) {
         card.dataset.id = book.id;
         card.classList.add('card');
         // Title elements
-        const title = document.createElement('p');
+        const title = document.createElement('h2');
         title.classList.add('title');
         title.textContent = `Title: ${book.title}`;
         card.appendChild(title);
@@ -86,9 +86,6 @@ function displayBook(book) {
 const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
 const theKing = new Book('The King', 'JLL Tolkien', 296, true);
 const theSquire = new Book('The Squire', 'JMM Tolkien', 297, true);
-
-// const bookBtns = Array.from(document.querySelectorAll('button.book'));
-// bookBtns.forEach((button) => button.addEventListener('click', toggleRead));
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
